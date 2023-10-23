@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="main">
+      <h1 class="soruh1">{{this.soru}}</h1>
+      <input type="text" name="answer" class="answerinput" />
+
+      <h2 class="info"></h2>
+
+      <div class="buttons">
+        <a onclick="getdata()">Post Answer</a>
+      </div>
+
+      <div class="buttons">
+        <a id="smt" href="/user/answersheet">Finish Quiz</a>
+      </div>
+
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

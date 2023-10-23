@@ -1,0 +1,38 @@
+body {
+  background-color: azure;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main .buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.main input {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.main .buttons a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.main .buttons #smt {
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  cursor: pointer;
+}

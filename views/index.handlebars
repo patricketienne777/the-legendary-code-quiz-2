@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    {{#if user}}
+      <div class="main">
+        <h1>Questions</h1>
+        <div class="buttons">
+          {{#if user.admin}}
+            <a href="/questions">Questions</a>
+            <a href="/addquestion">Add Question</a>
+          {{else}}
+            <a href="/questions">Questions</a>
+          {{/if}}
+        </div>
+      </div>
+    {{else}}
+      <div class="main">
+        <h1>Welcome Please Sign Up For Questions</h1>
+        <div class="buttons">
+          <a href="/user/login">Login</a>
+          <a href="/user/register">Register</a>
+        </div>
+      </div>
+
+    {{/if}}
+
+  </body>
+</html>
